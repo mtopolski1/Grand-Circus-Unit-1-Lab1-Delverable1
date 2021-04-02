@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace New_Deliverable1
 {
@@ -23,7 +23,7 @@ namespace New_Deliverable1
             //Loop
             bool yes = true;
 
-           while (yes == true)
+            while (yes == true)
             {
                 Console.Clear();
 
@@ -33,41 +33,41 @@ namespace New_Deliverable1
                     break;
                 }
 
-                    Console.Write("Enter Measurement Type : ");
-                    userInput = Console.ReadLine();
+                Console.Write("Enter Measurement Type : ");
+                userInput = Console.ReadLine();
 
-                    Console.Write("Enter a number : ");
-                    userInput2 = Console.ReadLine();
-                    double number = double.Parse(userInput2);
+                Console.Write("Enter a number : ");
+                userInput2 = Console.ReadLine();
+                double number = double.Parse(userInput2);
 
 
-                    if (userInput.ToLower() == "meme")
-                    {
-                        message = "foot";
-                        feet = meme / 5;
-                        Console.WriteLine(meme * feet + " " + message);
-                    }
-                    if (userInput.ToLower() == "foot")
-                    {
-                        message = "meme";
-                        meme = feet / 5;
-                        Console.WriteLine(feet * meme + " " + message);
-                    }
-                    if (userInput.ToLower() == "inch")
-                    {
-                        message = "fidget spinner";
-                        inch = spinner / 3.5;
-                        Console.WriteLine(spinner * inch + " " + message);
-                    }
-                    if (userInput.ToLower() == "fidget spinner")
-                    {
-                        message = "inch";
-                        spinner = inch / 3.5;
-                        Console.WriteLine(inch * spinner + " " + message);
-                    }
+                if (userInput.ToLower() == "meme")
+                {
+                    message = "feet";
+                    number = number / 5;
+                    Console.WriteLine(number + " " + message);
+                }
+                if (userInput.ToLower() == "feet")
+                {
+                    message = "meme";
+                    number = number * 5;
+                    Console.WriteLine(number + " " + message);
+                }
+                if (userInput.ToLower() == "inch")
+                {
+                    message = "fidget spinner";
+                    number = number * 3.5;
+                    Console.WriteLine(number + " " + message);
+                }
+                if (userInput.ToLower() == "fidget spinner")
+                {
+                    message = "inch";
+                    number = number / 3.5;
+                    Console.WriteLine(number + " " + message);
+                }
                 Console.WriteLine("Would you like to try again, yes/no");
                 Console.ReadLine();
-           }
+            }
 
         }
     }
